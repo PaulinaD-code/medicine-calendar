@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./calendar.css">
+  <title>Document</title>
+  <!-- font -->
+ <!-- Font Awesome CDN-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="calendar-container">
+    <h1>Kalendarium przyjmowania leków</h1>
+    <input class="patient-name js-patient-name" placeholder="Imię soby, której dotyczy pomiar ">
+    <input type="text" placeholder="Nazwa leku" class="medicine-name js-medicine-name">
+    
+    <input class="series js-series" placeholder="Wpisz numer seryjny harmonogramu(np. 3 ostatnie cyfry PESEL)">
+
+    <div class="numberOfMeasurement">
+      
+      <h3>Wpisz przedział czasowy przyjmowania dawek leku(w dniach)</h3>
+      <input type="number" class="how-many-times js-how-many-times" placeholder="Przedział czasowy(w dniach)">
+    </div>
+
+    <div class="numberOfDoses">
+      <h3>Wpisz liczbę dawek leku </h3>
+      <input type="number" class="doses js-doses-number" placeholder="liczba dawek" min="0">
+    </div>
+
+    <div class="first-dose">
+      <h3>Wskaż od kiedy lek ma być podawany</h3>
+      <input type="date" class="first-dose-input js-first-dose" min="0">
+    </div>
+
+    <button class="calculate-btn js-calbulate-btn">Oblicz terminy podania leku</button>
+    
+  </div>
+
+  <div class="dates-main-container js-dates-main-container">
+
+    <div class="medicine-name-container js-medicine-name-container"></div>
+    <div class="first-dose-info js-first-dose-information"></div>
+
+
+    <div class="terms-of-uses js-terms-of-uses">
+
+    </div>
+  </div>
+
+  <img src="img/245819-P47R15-686.jpg" alt="" class="background-img">
+
+  <script src="./another.js" type="module"></script>
+</body>
+</html>
